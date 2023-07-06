@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(78, 77, 75);
+}
+
+header h2 {
+  margin: 0;
+}
+
+header svg {
+  margin-top: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+/* Loader */
+
+.loadingpage {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/*Searchbox */
+
+.input-container {
+  position: relative;
+}
+
+.search {
+  display: block;
+  width: 300px;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  font-size: 1rem;
+  color: rgb(142, 142, 192);
+}
+
+.search::placeholder {
+  color: rgb(168, 162, 162);
+}
+
+.input-container svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  fill: rgb(125, 119, 119);
+}
+
+/* Card */
+
+.mycard {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px !important;
+  height:fit-content;
+  background-color: rgb(255, 254, 254) !important;
+}
+
+.mycard:hover {
+  background-color: rgb(239, 244, 216) !important;
+  box-shadow: rgba(241, 248, 210, 0.553) 0px 2px 8px 0px;
+}
+
+.mycard p b {
+  color: rgb(20, 136, 151);
+}
+
+.mycard span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-content {
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mycard:hover {
+  cursor: pointer;
+}
+
+/* List */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
+  width: 100%;
+}
+
+ul li {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+ul li .myavatar {
+  margin-right: 2rem;
+}
+
+/* RepoPage */
+
+.repo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.repo-container button {
+  margin-bottom: 2rem;
+}
+
+.repo-owner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.repo-infos {
+  max-width: 70%;
+  margin-bottom: 2rem;
+}
+
+.repo-infos p {
+  margin-bottom: 1rem;
+}
+
+.repo-infos h4 {
+  color: rgb(31, 187, 187);
+}
+
+.go-up {
+  margin-bottom: 2rem;
+}
+
+
+@media (max-width: 760px) {
+
+  .app h1 {
+    font-size: 2.5rem;
+  }
+
+  .mycard {
+    margin-left: 1rem;
+  }
+
+  ul {
+    max-width: 70%;
+  }
+
+  ul li .myavatar {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+@media (max-width: 541px) {
+
+  ul {
+    max-width: 70%;
+  }
+
+  ul li .myavatar {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .mycard {
+    max-width: 70%;
+  }
+
+  .repo-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .app h1 {
+      font-size: 2rem;
+  }
+
+}
